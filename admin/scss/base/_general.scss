@@ -1,0 +1,44 @@
+.omb_main-wrapper {
+  background: var(--omb-white);
+  padding: 10px 20px 0 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  & .submit {
+    & input[type="submit"] {
+      background-color: var(--omb-primary-color) !important;
+      border-color: var(--omb-primary-color) !important;
+      transition: all 0.2s;
+      &:hover {
+        background-color: darken($primary-color, 5%) !important;
+        border-color: darken($primary-color, 5%) !important;
+      }
+    }
+  }
+  & .omb-title {
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--omb-light-gray-2);
+  }
+  & .notice {
+    margin: 0 !important;
+    border-left: 0;
+    border-radius: 5px;
+    &.notice-success {
+      color: var(--omb-notification-success-text);
+      background-color: var(--omb-notification-success-bg) !important;
+      border: 1px solid var(--omb-notification-success-border) !important;
+      & .notice-dismiss::before {
+        color: var(--omb-notification-success-text);
+      }
+    }
+    &.notice-error {
+      color: var(--omb-notification-error-text);
+      background-color: var(--omb-notification-error-bg) !important;
+      border: 1px solid var(--omb-notification-error-border) !important;
+      & .notice-dismiss::before {
+        color: var(--omb-notification-error-text);
+      }
+    }
+  }
+}

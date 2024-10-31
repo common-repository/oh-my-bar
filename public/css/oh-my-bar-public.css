@@ -1,0 +1,37 @@
+:root {
+	--omb-white: #fff;
+	--omb-primary-color: #e3dc29;
+	--omb-primary-shadow-color: #e3dc29bf;
+	--omb-light-gray: #b8b8b8;
+	--omb-black: #000;
+}
+
+progress {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+progress.my_progressbar {
+	position: fixed;
+	appearance: none;
+	border: none;
+	z-index: 1000;
+	width: 100% !important;
+}
+
+progress.rounded {
+	border-radius: 50px;
+}
+
+progress.rounded::-webkit-progress-value {
+	border-radius: 50px;
+}
+
+progress.normal {
+	border-radius: 0;
+}
+
+progress.normal::-webkit-progress-value {
+	border-radius: 0;
+}
